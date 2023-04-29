@@ -1,0 +1,345 @@
+html{
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+body{
+   
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1rem;
+    line-height: 1.30;
+    margin: 0;
+    background-color: #000000;
+    color: #FBFCFC
+    
+}
+a{
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Rubik', sans-serif;
+    
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+/*========*/
+/*HEADER */
+/*========*/
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 5;
+  /* border: 2px solid rgb(0, 167, 218); */
+}
+.header .container{
+    position: relative;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    max-width: 1024px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.logo img{
+    width: 40%;
+    height: 40%;
+}
+
+.logo-title{
+    color: #FBFCFC ;
+    font-weight: 400;
+    font-size: 3rem;
+    text-shadow: 10px 10px 10px  #000000;
+}
+.logo-text{
+    color: #FBFCFC   ;
+    font-weight: 900;
+    font-size: 3rem;
+    text-shadow: 10px 10px 10px  #000000;
+}
+.logo-i{
+    /* color:  hsl(9, 88%, 60%); */
+    color: #2E69DE;
+    font-weight: 750;
+    text-shadow: 10px 10px 10px  #000000;
+}
+.logo-m{
+ /*    color: hsl(9, 88%, 60%); */
+ color: #2E69DE;
+ text-shadow: 10px 10px 10px  #000000;
+}
+/* .eslogan{
+    color: #FBFCFC;
+    font-size: 0.7rem;
+    display: flex;
+    margin: -3px;
+    font-weight: 500;
+    
+    
+    
+} */
+
+.nav{
+    display: flex;
+    justify-content: center;
+    gap: 0.50rem;
+  
+}
+
+.nav-link{
+    color: white;
+    font-weight: 500;
+    font-size: 0.9rem;
+    margin-bottom: -20;
+    
+
+}
+
+/*========*/
+/*HERO */
+/*========*/
+p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.hero{
+ /* border: 2px solid chartreuse; */
+ position: relative;
+min-height: 500px;
+ display: flex;
+ flex-direction: column;  
+ justify-content: center;
+ align-items: center; 
+ background-image: url('bg-hero.jpg');
+ background-size: cover;
+ background-position: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0,0,0,.6);
+}
+.hero .container{
+   /*  border: 2px solid whitesmoke; */
+   position: relative;
+    text-align: center;
+    color: aliceblue;
+    padding: 0 10px;
+    max-width: 1024px;
+}
+
+.hero-title{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2rem;
+    text-shadow: 10px 10px 10px  #000000;
+}
+
+/*========*/
+/* BLOG */
+/*========*/
+.blog{
+    padding: 50px 0;
+    max-width: 1024px;
+}
+
+.blog-title{
+    font-size: 2rem;
+    text-align: center;
+    
+}
+
+.articulos{
+display: flex;
+flex-direction: column;
+gap: 3rem;
+
+}
+
+
+
+.article-body{
+    padding: 0 20px 20px;
+}
+.article-title{
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+   
+}
+
+.article-link{
+    background-color: #2E69DE;
+    padding: 7px 14px;
+    border-radius: 10px;
+    color: #FBFCFC;
+    font-weight: 500;
+}
+
+
+
+/*=========*/
+/* PARALLAX */
+/*=========*/
+
+.parallax{
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background-image: url('jacob.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.wave{
+    position: absolute;
+    bottom: 0;
+    color: #000000;
+}
+
+/*=========*/
+/* COLABORADOR */
+/*=========*/
+.curiosidades{
+text-align: center;
+margin-top: 10px;
+}
+.curiosidades .container{
+    padding: 0 20px;
+   max-width: 1024px;
+
+}
+.curiosidades.title{
+    font-size: 3rem;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.footer{
+    padding: 0 0 25px;
+}
+.footer-container{
+    padding: 0 0 30px;
+    max-width: 1024px;
+}
+.copy{
+text-align: center;
+
+}
+
+.copy-title{
+    color: #FBFCFC ;
+    font-weight: 500;
+    font-size: 
+    1.5rem;
+}
+
+
+.footer-text{
+    color: #FBFCFC   ;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+.footer-i{
+    color: #2E69DE;
+    font-weight: 750;
+}
+.footer-m{
+    color: #2E69DE
+}
+.logo-m{
+
+ color: #2E69DE
+}
+.nav-footer{
+ text-align: center ;
+}
+.footer-link{
+   text-align: center;
+    color: #FBFCFC;
+    font-weight: 400;
+    margin: 2px;
+}
+
+/*=========*/
+/* RESPONSIVE */
+/*=========*/
+
+@media screen and (min-width: 678px) {
+ .header .container{
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+ .hero{
+    height: 600px;
+ }
+ .hero-title{
+    font-size: 3rem;
+ }
+ .hero-description{
+    font-size: 1.5rem;
+}
+.article{
+    display: flex;
+    align-items: center;
+}
+.blog .container{
+    padding: 0 20px;
+}
+.article-img{
+    width: 50%;
+    height: 250px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.article-img img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+}
+.article-body{
+    width: 50%;
+}
+.articulos .article:nth-child(even){
+    flex-direction: row-reverse;
+    
+ }
+}
+.parallax{
+    height: 1000px;
+}
+
+@media screen and (min-width: 1024px) {
+    .header .container,
+    .hero .container,
+    .blog,
+    .curiosidades .container,
+    .footer .container,    
+    .header .container{
+        margin: 0 auto;
+    }
+}
